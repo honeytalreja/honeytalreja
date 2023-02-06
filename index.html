@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Task Manager App</title>
+</head>
+<body>
+    <h1>Task Manager App</h1>
+    <div id="container">
+        <div id="open">Open
+        </br></br>
+            <!-- <div id="added-values">
+            </div> -->
+            <input id="new-items" type="text">
+            <button id="btn" type="button">+</button>
+            <div id="tasks" ondrop="drop(event)" ondragleave="dragLeft(event)" ondragenter="dragEntered(event)" ondragover="allowDrop(event)">
+            </div>
+        </div>
+        <div id="progress"> In Progress
+          </br></br>
+          <div id="inProgress" ondrop="drop(event)" ondragleave="dragLeft(event)" ondragenter="dragEntered(event)" ondragover="allowDrop(event)">
+          </div>
+        </div>
+        <div id="review">In Review
+          </br></br>
+          <div id="inReview" ondrop="drop(event)" ondragleave="dragLeft(event)" ondragenter="dragEntered(event)"  ondragover="allowDrop(event)">
+          </div>
+        </div>
+        <div id="done">Done
+          </br></br>
+          <div id="completed" ondrop="drop(event)" ondragleave="dragLeft(event)" ondragenter="dragEntered(event)" ondragover="allowDrop(event)">
+          </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>
